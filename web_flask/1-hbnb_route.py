@@ -5,11 +5,11 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
-def hello_hbnb():
+def hbnb_route():
     return "Hello HBNB!"
 
 @app.route('/hbnb', strict_slashes=False)
-def display_hbnb():
+def hbnb():
     return "HBNB"
 
 if __name__ == '__main__':
